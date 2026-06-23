@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bed Bug Assessment and Treatment Proposal — Woodsby's Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:#f0f0f0;padding:1.5rem;}
+    @media print{
+      body{background:white;padding:0;margin:0;font-size:11pt;}
+      .no-print{display:none!important;}
+      .doc{box-shadow:none!important;}
+      h3{page-break-after:avoid;page-break-inside:avoid;}
+      p{page-break-inside:avoid;orphans:3;widows:3;}
+      .section{page-break-inside:avoid;}
+      .highlight-box,.success-box,.warning-box{page-break-inside:avoid;}
+      .photo-item{page-break-inside:avoid;}
+      .photo-grid,.photo-grid-2{page-break-inside:avoid;}
+      .schedule-table{page-break-inside:avoid;}
+      .client-grid{page-break-inside:avoid;}
+      ul{page-break-inside:avoid;}
+      li{page-break-inside:avoid;}
+      .header,.doc-title-bar,.client-grid{page-break-inside:avoid;page-break-after:avoid;}
+      .footer{page-break-inside:avoid;}
+    }
+    .print-bar{max-width:820px;margin:0 auto 1rem;text-align:right;}
+    .print-btn{background:#1a2557;color:white;border:none;padding:0.65rem 1.6rem;font-family:'Inter',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:3px;}
+    .doc{background:white;max-width:820px;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,0.12);}
+    .header{padding:1.8rem 2.5rem 1.2rem;border-bottom:3px solid #1a2557;}
+    .header-top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:1rem;}
+    .logo{height:120px;width:auto;}
+    .company-block p{font-size:0.75rem;color:#555;line-height:1.7;margin-top:0.3rem;}
+    .doc-info{text-align:right;font-size:0.75rem;color:#555;line-height:1.8;}
+    .doc-info strong{color:#1a2557;display:block;font-size:0.88rem;font-weight:800;}
+    .gold-bar{height:3px;background:linear-gradient(90deg,#FFB800,#e0a200,#FFB800);}
+    .doc-title-bar{background:#1a2557;color:white;padding:1rem 2.5rem;}
+    .doc-title-bar h1{font-size:1rem;font-weight:700;letter-spacing:0.04em;}
+    .doc-title-bar .sub{font-size:0.75rem;opacity:0.75;margin-top:0.2rem;}
+    .client-grid{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #e5e7eb;}
+    .client-cell{padding:0.8rem 2.5rem;border-right:1px solid #e5e7eb;}
+    .client-cell:nth-child(even){border-right:none;}
+    .client-cell:nth-child(3),.client-cell:nth-child(4){border-top:1px solid #e5e7eb;}
+    .client-cell label{font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#999;display:block;margin-bottom:0.2rem;}
+    .client-cell p{font-size:0.82rem;color:#1a2557;font-weight:600;}
+    .content{padding:1.8rem 2.5rem 2rem;}
+    h3{font-size:0.8rem;font-weight:800;color:#1a2557;text-transform:uppercase;letter-spacing:0.08em;margin:1.8rem 0 0.6rem;padding-bottom:0.4rem;border-bottom:2px solid #FFB800;}
+    h3:first-child{margin-top:0;}
+    p{font-size:0.82rem;color:#333;line-height:1.8;margin-bottom:0.7rem;}
+    ul{padding-left:1.3rem;margin-bottom:0.8rem;}
+    li{font-size:0.82rem;color:#333;line-height:1.8;margin-bottom:0.25rem;}
+    strong{color:#1a2557;}
+    .highlight-box{background:#f0f3fa;border-left:4px solid #1a2557;padding:0.9rem 1.2rem;margin:0.8rem 0;font-size:0.82rem;color:#1a2557;line-height:1.8;}
+    .success-box{background:#f0f8f0;border-left:4px solid #2d7a3a;padding:0.9rem 1.2rem;margin:0.8rem 0;font-size:0.82rem;color:#1a2557;line-height:1.8;}
+    .warning-box{background:#fffbf0;border-left:4px solid #e0a200;padding:0.9rem 1.2rem;margin:0.8rem 0;font-size:0.82rem;color:#1a2557;line-height:1.8;}
+    .schedule-table{width:100%;border-collapse:collapse;margin:0.8rem 0;font-size:0.79rem;}
+    .schedule-table th{background:#1a2557;color:white;padding:0.5rem 0.8rem;text-align:left;font-weight:600;font-size:0.72rem;letter-spacing:0.04em;}
+    .schedule-table td{padding:0.5rem 0.8rem;border-bottom:1px solid #e5e7eb;color:#333;vertical-align:top;line-height:1.6;}
+    .schedule-table tr:last-child td{border-bottom:none;}
+    .schedule-table tr.total-row td{font-weight:700;color:#1a2557;background:#f8f9fc;border-top:2px solid #1a2557;}
+    .schedule-table tr.savings-row td{background:#f0f8f0;}
+    .photo-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+    .photo-item{border:1px solid #e5e7eb;border-radius:3px;overflow:hidden;}
+    .photo-item img{width:100%;height:220px;object-fit:cover;display:block;}
+    .photo-item.tall img{height:280px;}
+    .photo-caption{padding:0.5rem 0.7rem;font-size:0.72rem;color:#555;line-height:1.5;background:#f8f9fc;border-top:1px solid #e5e7eb;}
+    .phase-header{background:#f0f3fa;padding:0.5rem 0.8rem;font-size:0.78rem;font-weight:700;color:#1a2557;border-left:3px solid #1a2557;margin:1rem 0 0.5rem;}
+    .footer{border-top:3px solid #1a2557;padding:0.8rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;}
+    .footer-left{font-size:0.72rem;font-weight:700;color:#1a2557;letter-spacing:0.05em;}
+    .footer-right{font-size:0.65rem;color:#888;text-align:right;line-height:1.6;}
+    @media(max-width:600px){
+      .client-grid{grid-template-columns:1fr;}
+      .photo-grid-2{grid-template-columns:1fr;}
+      .client-cell:nth-child(even){border-right:none;border-left:none;}
+      .header-top{flex-direction:column;}
+      .doc-info{text-align:left;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="print-bar no-print">
+  <button class="print-btn" onclick="window.print()">&#8659; Save as PDF / Print</button>
+</div>
+
+<div class="doc">
+
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <img src="https://vant-pestpro.github.io/pestpro-docs/photos/logo-pestpro.jpg" alt="Pest Pro LLC" class="logo"/>
+        <p style="font-size:0.75rem;color:#555;line-height:1.7;margin-top:0.3rem;">
+          3211 Vineland Road, Suite 107 &middot; Kissimmee, FL 34746<br/>
+          Office: (407) 922-2276 &middot; info@PestProLLC.com<br/>
+          Licensed &amp; Insured &middot; State of Florida &middot; <em>"Our 40th Year"</em>
+        </p>
+      </div>
+      <div class="doc-info">
+        <strong>BED BUG ASSESSMENT &amp; TREATMENT PROPOSAL</strong>
+        Report No.: PP-2026-WBC-001<br/>
+        Date Issued: June 23, 2026<br/>
+        Inspected By: Daniel Rumsey, CPO<br/>
+        Service Code: Code I (Bed Bugs)
+      </div>
+    </div>
+    <div class="gold-bar"></div>
+  </div>
+
+  <div class="doc-title-bar">
+    <h1>BED BUG ELIMINATION PROGRAM &mdash; ASSESSMENT &amp; TREATMENT PROPOSAL</h1>
+    <div class="sub">Woodsby's Cafe &middot; Kissimmee, FL &middot; Existing Pest Pro Account &middot; General Household Pest Program</div>
+  </div>
+
+  <div class="client-grid">
+    <div class="client-cell"><label>Facility Name</label><p>Woodsby's Cafe</p></div>
+    <div class="client-cell"><label>Service Address</label><p>4515 S. Orange Blossom Trail, Kissimmee, FL 34746</p></div>
+    <div class="client-cell"><label>Account Owner</label><p>Adam Hartman, Owner</p></div>
+    <div class="client-cell"><label>Site Contact</label><p>Peyton, General Manager</p></div>
+  </div>
+
+  <div class="content">
+
+    <div class="warning-box">
+      <strong>Important Notice:</strong> Bed bugs are not included under the current monthly General Household Pest (GHP) service agreement. This report and the treatment proposal below represent a separate, specialized service program. Your existing monthly GHP service will continue as scheduled and is unaffected by this proposal.
+    </div>
+
+    <h3>Executive Summary</h3>
+    <p>Woodsby's Cafe has been a Pest Pro General Household Pest customer since March 2026. During a recent service visit, evidence of bed bug activity was identified in the dining area. A comprehensive inspection was subsequently performed, confirming a significant and long-standing infestation throughout the booth seating, dining chairs, and bar area of the facility.</p>
+    <p>The inspection revealed an infestation that has persisted at this location for several years and survived prior treatment attempts by multiple pest control providers. Live specimens at all life stages were documented, including eggs, shed casings, nymphs, and fed adults. The structural characteristics of the dining room create a complex harborage environment that requires a multi-method elimination approach to resolve effectively. This proposal outlines a three-phase program designed to eliminate the existing population, prevent egg cycle rebound, and provide ongoing protection against re-introduction.</p>
+
+    <h3>Property Overview</h3>
+    <p>Woodsby's Cafe is a full-service restaurant with a large dining room and a dedicated bar area. The dining room contains 13 upholstered booths, 18 tables, 37 dining chairs, and a full bar with 8 barstools. The walls throughout are finished with dark wood panel wainscoting from floor to mid-height, rubber base molding, and are covered with framed artwork, signs, and decorative items on every wall surface.</p>
+    <p>This combination of structural characteristics creates extensive harborage opportunities that are not accessible with standard spray applications alone. Every framed piece on the wall, every gap in the baseboard trim, every joint in the booth framing, and every electrical outlet in the dining room represents a potential harborage point that must be addressed as part of a complete treatment program.</p>
+
+    <div class="photo-grid-2">
+      <div class="photo-item">
+        <img src="photos/photo-01-dining-room.jpg" alt="Woodsby's Cafe Dining Room"/>
+        <div class="photo-caption"><strong>Fig. 1 &mdash; Dining Room Overview.</strong> The dining room contains 13 booths, 18 tables, and 37 chairs across the full treatment area. Wood panel wainscoting, rubber base molding, and wall-to-wall framed artwork and signage create an extensive harborage environment throughout the space. All booth and chair surfaces, wall voids, and electrical outlets will be addressed in the treatment program.</div>
+      </div>
+      <div class="photo-item">
+        <img src="photos/photo-02-bar-area.jpg" alt="Woodsby's Cafe Bar Area"/>
+        <div class="photo-caption"><strong>Fig. 2 &mdash; Bar Area.</strong> The bar area is treated as a separate zone within the overall program. Eight barstools, the full bar counter, and all bar infrastructure will receive the same crack and crevice and surface treatment protocol applied throughout the dining room. The bar presents its own set of harborage points including wood cabinetry, bar rail joints, and the area behind and beneath the bar structure.</div>
+      </div>
+    </div>
+
+    <h3>Inspection Findings</h3>
+    <p>A thorough inspection of the dining room and bar was conducted with booths opened and furniture turned to allow access to all interior structural surfaces. The following conditions were documented:</p>
+    <ul>
+      <li><strong>Active infestation confirmed</strong> in multiple booths throughout the dining room, with evidence of high-level colony activity in the front corner booth and adjacent seating areas.</li>
+      <li><strong>All life stages present:</strong> Eggs, shed casings (exuviae), nymphs at multiple developmental stages, and engorged adult specimens were observed, confirming an established, actively reproducing population.</li>
+      <li><strong>Dense fecal spotting</strong> covering interior booth frame surfaces, seat platform edges, corner joints, and OSB backing panels throughout multiple units.</li>
+      <li><strong>Active harborage in trim gaps:</strong> Live nymphs and debris documented in the gap between booth seat backs and decorative woven trim, confirming the infestation is occupying all available structural voids within the furniture.</li>
+      <li><strong>Prior treatment evidence:</strong> White pesticide dust residue from previous pest control applications was found inside booth structural cavities. The infestation persisted and rebuilt through these prior treatments.</li>
+      <li><strong>Wall void access confirmed:</strong> Gaps at rubber baseboard seams provide direct access to wall cavities, allowing populations to harbor inside walls and survive surface-only treatments.</li>
+      <li><strong>Spread to chair seating:</strong> Prior treatment dust documented beneath dining chair undercarriages, indicating the infestation has migrated beyond the fixed booth seating into the movable furniture throughout the dining room.</li>
+    </ul>
+
+    <h3>Photographic Evidence</h3>
+
+    <div class="photo-grid-2">
+      <div class="photo-item tall">
+        <img src="photos/photo-03-fecal-evidence.jpg" alt="Bed Bug Fecal Evidence"/>
+        <div class="photo-caption"><strong>Fig. 3 &mdash; Fecal Contamination, Booth Frame Interior.</strong> Extremely dense fecal spotting across all painted interior frame surfaces of the front corner booth. This level of contamination is consistent with an established colony present across multiple seasons. The spotting density and distribution indicate sustained, high-volume harborage activity at this location over an extended period.</div>
+      </div>
+      <div class="photo-item tall">
+        <img src="photos/photo-04-active-colony.jpg" alt="Live Bed Bug Colony Confirmed"/>
+        <div class="photo-caption"><strong>Fig. 4 &mdash; Active Colony Confirmed, Booth Seat Trim Gap.</strong> Live bed bug nymphs and shed casings documented in the gap between the booth seat back and the decorative woven trim panel. Multiple life stages visible in a single harborage point. This gap type, present throughout all booth units, is a primary harborage zone that requires direct crack and crevice treatment to reach.</div>
+      </div>
+    </div>
+
+    <h3>History of Infestation and Prior Treatment Attempts</h3>
+    <p>The evidence collected during this inspection is consistent with a bed bug infestation that has been present at this location for several years. Multiple pest control providers have cycled through the property during this period, and aged pesticide dust residue inside booth structural cavities documents those prior treatment attempts.</p>
+    <p>Despite these efforts, the infestation has persisted and rebuilt each time. This is not unusual for a commercial restaurant environment with this level of structural complexity. Standard crack and crevice or surface spray treatments, applied without simultaneously addressing the wall voids and the internal cavities within the booth structures, will temporarily reduce the visible surface population while leaving harborage populations intact. Those populations survive, continue to reproduce, and restore the infestation within weeks to months of each treatment.</p>
+
+    <div class="photo-grid-2">
+      <div class="photo-item tall">
+        <img src="photos/photo-05-prior-treatment.jpg" alt="Evidence of Prior Pest Control Treatments"/>
+        <div class="photo-caption"><strong>Fig. 5 &mdash; Prior Treatment Evidence, Booth Cavity Interior.</strong> Interior cavity of a dining booth with the back panel removed, showing heavy white pesticide dust residue from prior treatment attempts. The dust has aged in place while the infestation persisted. This confirms a documented history of treatment attempts and demonstrates that prior approaches did not reach the population at the depth required to achieve elimination.</div>
+      </div>
+      <div class="photo-item tall">
+        <img src="photos/photo-06-baseboard-void.jpg" alt="Baseboard Gap Wall Void Access Point"/>
+        <div class="photo-caption"><strong>Fig. 6 &mdash; Wall Void Access Point, Baseboard Corner.</strong> Baseboard corner showing an unsealed gap where rubber base molding sections meet the wall. This opening provides direct access to the wall cavity interior, allowing bed bug populations to harbor inside the wall structure and survive treatments applied only to visible surfaces. These void spaces are addressed during Phase 1 treatment via residual dust injection through outlet removal access points and baseboard gaps.</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Why Prior Treatments Have Not Achieved Elimination:</strong> Bed bugs are highly effective at retreating into voids and structural cavities when a treatment event is detected. The dining room at Woodsby's Cafe contains multiple confirmed access points to wall voids via baseboard gaps and electrical outlets, as well as extensive internal cavity space within the booth structures themselves. Treatments that address only the exposed surfaces leave the harborage population intact. Complete elimination requires simultaneous treatment of all surfaces, internal voids, and airborne populations in a single coordinated application, followed by a timed follow-up to intercept the next egg hatch cycle.
+    </div>
+
+    <h3>Recommended Treatment Program</h3>
+
+    <div class="phase-header">Phase 1 &mdash; Intensive Bed Bug Cleanout</div>
+    <p>The initial treatment is a comprehensive, multi-method cleanout targeting all confirmed and potential harborage points throughout the dining room and bar. All furniture will be flipped to provide access to all underside surfaces before treatment begins.</p>
+    <p><strong>Treatment surfaces:</strong></p>
+    <ul>
+      <li>13 dining booths: all interior and exterior surfaces, seats, backs, bases, and frames, including behind all decorative trim panels</li>
+      <li>18 tables: undersides, legs, and all structural joints</li>
+      <li>37 dining chairs: all sides including seat undersides and leg joints</li>
+      <li>8 barstools: all sides and structural joints throughout the bar area</li>
+      <li>Full bar area: surfaces, undersides, and all cracks and crevices</li>
+      <li>All removable wall-mounted artwork and framed pieces: treatment behind each item prior to replacement</li>
+      <li>Electrical outlets throughout the dining room: outlet covers removed, wall voids injected with residual dust, covers replaced</li>
+    </ul>
+    <p><strong>Treatment methods applied:</strong></p>
+    <ul>
+      <li>Pyrethrin contact kill applied via full crack and crevice treatment to all seating, tables, and wall harborage points</li>
+      <li>Knockdown agent applied to all active infestation areas</li>
+      <li>Insect growth regulator (IGR) applied to all cracks, crevices, and surface areas to disrupt the reproductive cycle and prevent egg viability going forward</li>
+      <li>Residual dust applied to wall void spaces accessed via outlet removal points and baseboard gaps throughout the dining room</li>
+      <li>Complete fogging treatment of the full dining room and bar area to reach airborne populations and surface areas not accessible by contact application alone</li>
+    </ul>
+
+    <div class="phase-header">Phase 2 &mdash; Follow-up Treatment (Approximately 2 Weeks After Phase 1)</div>
+    <p>Bed bug eggs are resistant to most contact insecticides at the time of initial application. Eggs deposited prior to Phase 1 will begin to hatch in the days following treatment and produce a new generation of nymphs. Phase 2 is performed at the two-week mark to eliminate this second wave before it can develop to reproductive maturity. This treatment is less intensive than Phase 1 but follows the same protocol across all major harborage zones. Skipping Phase 2 significantly increases the probability of infestation rebound.</p>
+
+    <div class="phase-header">Phase 3 &mdash; Monthly Inspection and Preventative Treatment (3-Month Minimum)</div>
+    <p>Following the two-phase cleanout, a minimum of three consecutive monthly visits are strongly recommended. Each visit includes a full inspection of the dining room and bar and targeted preventative treatment of any areas showing residual or new activity. Bed bug re-introduction in a restaurant environment is an ongoing risk due to regular guest traffic. Monthly monitoring provides early detection that protects the program investment made in Phases 1 and 2 and prevents a future cleanout from being necessary.</p>
+
+    <h3>Preparation Requirements</h3>
+    <p>The following must be completed by Woodsby's Cafe staff before the technician arrives on treatment day. Incomplete preparation at the time of arrival may require rescheduling.</p>
+    <ul>
+      <li>All condiments, caddies, and table accessories removed from all tables and booth surfaces</li>
+      <li>All dishware, silverware, glassware, and food items removed from the treatment area or fully covered and sealed</li>
+      <li>All tables, booths, and chairs flipped upside down prior to technician arrival, or staff available on-site to assist with flipping at the start of the service</li>
+    </ul>
+
+    <div class="warning-box">
+      <strong>Post-Treatment Cleaning Requirement:</strong> After treatment is complete and before reopening for service, staff must thoroughly clean all surfaces that will make contact with food or persons. A residual chemical film will be present on all treated surfaces. This is expected and is part of the treatment protocol. All food-contact and person-contact surfaces must be cleaned to food-service standards before guests are seated or food service begins.
+    </div>
+
+    <h3>Investment Summary</h3>
+    <p>The table below shows industry standard rates for a commercial bed bug elimination program of this scope, alongside your preferred customer pricing as an active Pest Pro account.</p>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th style="width:22%;">Service</th>
+          <th>Description</th>
+          <th style="text-align:right;width:16%;">Industry Standard</th>
+          <th style="text-align:right;width:16%;">Your Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Phase 1</strong><br/><span style="font-size:0.7rem;color:#777;">Intensive Bed Bug Cleanout</span></td>
+          <td style="font-size:0.77rem;">
+            13 booths &middot; 18 tables &middot; 37 chairs &middot; 8 barstools &middot; bar area<br/>
+            Pyrethrin crack/crevice &middot; knockdown &middot; IGR &middot; dust &middot; fog<br/>
+            Outlet removal and wall void injection included
+          </td>
+          <td style="text-align:right;">$2,400.00</td>
+          <td style="text-align:right;color:#2d7a3a;font-weight:700;">$1,228.00</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 2</strong><br/><span style="font-size:0.7rem;color:#777;">Follow-up Treatment (~2 weeks)</span></td>
+          <td style="font-size:0.77rem;">Secondary treatment targeting newly hatched nymphs from eggs present at time of Phase 1. Same protocol, less intensive coverage. Required to break the egg hatch cycle.</td>
+          <td style="text-align:right;">$900.00</td>
+          <td style="text-align:right;color:#2d7a3a;font-weight:700;">$466.00</td>
+        </tr>
+        <tr>
+          <td><strong>Phase 3</strong><br/><span style="font-size:0.7rem;color:#777;">Monthly Preventative (3-month minimum)</span></td>
+          <td style="font-size:0.77rem;">Monthly inspection and targeted preventative treatment. Minimum 3 consecutive months following the cleanout phases. Provides early detection and ongoing protection against re-introduction.</td>
+          <td style="text-align:right;">$250.00/mo</td>
+          <td style="text-align:right;color:#2d7a3a;font-weight:700;">$120.00/mo</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2"><strong>Total Program Investment &mdash; Phases 1, 2, and 3 (3 months)</strong></td>
+          <td style="text-align:right;">$4,050.00</td>
+          <td style="text-align:right;color:#2d7a3a;">$2,054.00</td>
+        </tr>
+        <tr class="savings-row">
+          <td colspan="3" style="text-align:right;font-size:0.78rem;color:#2d7a3a;font-weight:600;padding-top:0.5rem;">Your savings as a Pest Pro customer:</td>
+          <td style="text-align:right;font-size:0.9rem;color:#2d7a3a;font-weight:800;">$1,996.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="success-box">
+      <strong>Existing GHP Service Continues Unaffected.</strong> Your current monthly General Household Pest program at $200/month remains active and is not included in the figures above. The GHP program covers general household pests as outlined in your service agreement. Bed bugs require a dedicated elimination program and are not included under the GHP plan. Both programs can run concurrently.
+    </div>
+
+    <h3>About Pest Pro</h3>
+    <p>Pest Pro has been protecting Florida homes and businesses since 1988. Our Central Florida operation serves the Kissimmee and greater Orlando area with science-backed pest control tailored to the conditions of Florida's unique environment. Daniel Rumsey, CPO, brings 30 years of field experience to every assessment, including specialized expertise in bed bug identification, documentation, and elimination in commercial settings.</p>
+    <p>Every treatment program we design is specific to the property, the pest, and the structural conditions found on-site. Cookie-cutter approaches do not work for established commercial infestations. This program was built for Woodsby's Cafe specifically, based on what we found during this inspection.</p>
+    <p style="font-size:0.75rem;color:#777;margin-top:0.5rem;">Florida Pest Control Business License: JB304313 &middot; Liability Insurance: Markel Insurance, Policy PCG7470-07 &middot; Coverage: $1,000,000 per occurrence / $3,000,000 aggregate</p>
+
+    <div style="margin-top:2rem;padding-top:1.2rem;border-top:1px solid #e5e7eb;">
+      <p style="font-size:0.78rem;color:#333;margin-bottom:0.3rem;"><strong>Prepared by:</strong></p>
+      <p style="font-size:0.82rem;color:#1a2557;font-weight:600;line-height:1.8;">
+        Daniel Rumsey, CPO<br/>
+        PEST PRO, LLC<br/>
+        3211 Vineland Road, #107 &middot; Kissimmee, FL 34746<br/>
+        Cell: 954-410-6389 &middot; Office: 407-922-2276<br/>
+        info@PestProLLC.com
+      </p>
+      <p style="font-size:0.72rem;color:#888;margin-top:0.8rem;">This estimate is valid for 30 days from the date of issue. Scheduling is subject to technician availability. Preparation requirements must be fully completed prior to technician arrival.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">PEST PRO, LLC &middot; PP-2026-WBC-001 &middot; CONFIDENTIAL</div>
+    <div class="footer-right">
+      3211 Vineland Road, Suite 107 &middot; Kissimmee, FL 34746<br/>
+      (407) 922-2276 &middot; info@PestProLLC.com &middot; License: JB304313
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
