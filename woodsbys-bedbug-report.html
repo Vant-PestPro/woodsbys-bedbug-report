@@ -8,22 +8,36 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Inter',sans-serif;background:#f0f0f0;padding:1.5rem;}
+    @page{
+      margin:0.75in 0.75in 1in 0.75in;
+      @bottom-right{
+        content:"Page " counter(page) " of " counter(pages);
+        font-family:'Inter',sans-serif;
+        font-size:8pt;
+        color:#888;
+      }
+    }
     @media print{
       body{background:white;padding:0;margin:0;font-size:11pt;}
       .no-print{display:none!important;}
       .doc{box-shadow:none!important;}
-      h3{page-break-after:avoid;page-break-inside:avoid;}
-      p{page-break-inside:avoid;orphans:3;widows:3;}
-      .section{page-break-inside:avoid;}
-      .highlight-box,.success-box,.warning-box{page-break-inside:avoid;}
-      .photo-item{page-break-inside:avoid;}
-      .photo-grid,.photo-grid-2{page-break-inside:avoid;}
-      .schedule-table{page-break-inside:avoid;}
-      .client-grid{page-break-inside:avoid;}
-      ul{page-break-inside:avoid;}
-      li{page-break-inside:avoid;}
-      .header,.doc-title-bar,.client-grid{page-break-inside:avoid;page-break-after:avoid;}
-      .footer{page-break-inside:avoid;}
+      h3{page-break-after:avoid;break-after:avoid;page-break-inside:avoid;break-inside:avoid;}
+      p{page-break-inside:avoid;break-inside:avoid;orphans:3;widows:3;}
+      .section{page-break-inside:avoid;break-inside:avoid;}
+      .highlight-box,.success-box,.warning-box{page-break-inside:avoid;break-inside:avoid;}
+      .photo-item{page-break-inside:avoid;break-inside:avoid;}
+      .photo-grid,.photo-grid-2{page-break-inside:avoid;break-inside:avoid;}
+      .schedule-table{page-break-inside:avoid;break-inside:avoid;}
+      .client-grid{page-break-inside:avoid;break-inside:avoid;}
+      ul{page-break-inside:avoid;break-inside:avoid;break-before:avoid;}
+      li{page-break-inside:avoid;break-inside:avoid;}
+      .header,.doc-title-bar,.client-grid{page-break-inside:avoid;break-inside:avoid;page-break-after:avoid;break-after:avoid;}
+      .footer{page-break-inside:avoid;break-inside:avoid;}
+      .phase-header{page-break-after:avoid;break-after:avoid;page-break-inside:avoid;break-inside:avoid;}
+      /* Strategic page breaks for clean print balance */
+      h3.break-before-photographic{page-break-before:always;break-before:page;}
+      h3.break-before-treatment{page-break-before:always;break-before:page;}
+      h3.break-before-investment{page-break-before:always;break-before:page;}
     }
     .print-bar{max-width:820px;margin:0 auto 1rem;text-align:right;}
     .print-btn{background:#1a2557;color:white;border:none;padding:0.65rem 1.6rem;font-family:'Inter',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:3px;}
@@ -156,7 +170,7 @@
       <li><strong>Spread to chair seating:</strong> Prior treatment dust documented beneath dining chair undercarriages, indicating the infestation has migrated beyond the fixed booth seating into the movable furniture throughout the dining room.</li>
     </ul>
 
-    <h3>Photographic Evidence</h3>
+    <h3 class="break-before-photographic">Photographic Evidence</h3>
 
     <div class="photo-grid-2">
       <div class="photo-item tall">
@@ -185,10 +199,10 @@
     </div>
 
     <div class="highlight-box">
-      <strong>Why Prior Treatments Have Not Achieved Elimination:</strong> Bed bugs are highly effective at retreating into voids and structural cavities when a treatment event is detected. The dining room at Woodsby's Cafe contains multiple confirmed access points to wall voids via baseboard gaps and electrical outlets, as well as extensive internal cavity space within the booth structures themselves. Treatments that address only the exposed surfaces leave the harborage population intact. Complete elimination requires simultaneous treatment of all surfaces, internal voids, and airborne populations in a single coordinated application, followed by a timed follow-up to intercept the next egg hatch cycle.
+      <strong>Why Prior Treatments Have Not Achieved Elimination:</strong> Bed bugs are highly effective at retreating into voids and structural cavities when a treatment event is detected. The dining room at Woodsby's Cafe contains multiple confirmed access points to wall voids via baseboard gaps and electrical outlets, as well as extensive internal cavity space within the booth structures themselves. Treatments that address only the exposed surfaces leave the harborage population intact. Complete elimination requires simultaneous treatment of all surfaces, internal voids, and harborage populations throughout the space in a single coordinated application, followed by a timed follow-up to intercept the next egg hatch cycle.
     </div>
 
-    <h3>Recommended Treatment Program</h3>
+    <h3 class="break-before-treatment">Recommended Treatment Program</h3>
 
     <div class="phase-header">Phase 1 &mdash; Intensive Bed Bug Cleanout</div>
     <p>The initial treatment is a comprehensive, multi-method cleanout targeting all confirmed and potential harborage points throughout the dining room and bar. All furniture will be flipped to provide access to all underside surfaces before treatment begins.</p>
@@ -208,7 +222,7 @@
       <li>Knockdown agent applied to all active infestation areas</li>
       <li>Insect growth regulator (IGR) applied to all cracks, crevices, and surface areas to disrupt the reproductive cycle and prevent egg viability going forward</li>
       <li>Residual dust applied to wall void spaces accessed via outlet removal points and baseboard gaps throughout the dining room</li>
-      <li>Complete fogging treatment of the full dining room and bar area to reach airborne populations and surface areas not accessible by contact application alone</li>
+      <li>Complete fogging treatment of the full dining room and bar area to penetrate concealed harborage zones, upper wall surfaces, and furniture voids not reachable by direct contact application alone</li>
     </ul>
 
     <div class="phase-header">Phase 2 &mdash; Follow-up Treatment (Approximately 2 Weeks After Phase 1)</div>
@@ -232,7 +246,7 @@
       <strong>Post-Treatment Cleaning Requirement:</strong> After treatment is complete and before reopening for service, staff must thoroughly clean all surfaces that will make contact with food or persons. A residual chemical film will be present on all treated surfaces. This is expected and is part of the treatment protocol. All food-contact and person-contact surfaces must be cleaned to food-service standards before guests are seated or food service begins.
     </div>
 
-    <h3>Investment Summary</h3>
+    <h3 class="break-before-investment">Investment Summary</h3>
     <p>The table below shows industry standard rates for a commercial bed bug elimination program of this scope, alongside your preferred customer pricing as an active Pest Pro account.</p>
 
     <table class="schedule-table">
